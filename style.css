@@ -35,65 +35,124 @@ body {
   background-color: var(--Very-Dark-Blue);
   color: var(--White);
   font-size: var(--font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
 }
 
-a{
-    text-decoration: none;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-section {
-    border: 1px solid red;
-    background-color: var(--Dark-Blue);
-    height: 50vh;
-    margin: 25vh 1.5rem;
-    padding: 1.5rem;
+a {
+  text-decoration: none;
 }
 
-ul{
-    /* border: 1px solid; */
-    height: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    /* gap: 10rem; */
+.container {
+  background-color: var(--Dark-Blue);
+  flex-basis: 80%;
+  height: 100%;
+  border-radius: 10px;
+}
+.content-container {
+  height: 100%;
+  margin: 1rem;
+  display: flex;
+  flex-flow: column;
 }
 
-.star{
-    background-color: var(--Medium-Grey);
-    padding: 1rem;
-    /* height: 60px;
-    width: 60px; */
-    border-radius: 50%;
-}
-.message{}
-
-.rating{
-    display: flex;
-    justify-content: space-evenly;
+.star-icon-container {
+  background-color: hsl(213, 19%, 25%);
+  padding: 0.625rem 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  flex: 1 1 auto;
 }
 
-.rating a{
-    background-color: var(--Medium-Grey);
-    padding: 1rem;
-    /* height: 60px;
-    width: 60px; */
-    border-radius: 50%;
+.star-icon {
+  background-image: url("/images/icon-star.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1rem;
+  width: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.cta-button {
-    display: block;
-    background-color: var(--Orange);
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-    border-radius: 50px;
+.feedback-message {
+  flex: 2 1 auto;
+  margin-top: 1rem;
+}
+
+.feedback-message > h1 {
+  font-size: calc(var(--font-size) * 2);
+}
+
+.feedback-message > p {
+  color: var(--Medium-Grey);
+  font-size: calc(var(--font-size) * 1.1);
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.rating-container {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.rating-container ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-container ul a {
+  background-color: hsl(213, 19%, 25%);
+  color: var(--Medium-Grey);
+  padding: 0.8rem 1.1rem;
+  border-radius: 50%;
+}
+
+.rating-container ul a:hover {
+  color: var(--White);
+  background-color: var(--Orange);
+}
+
+.rating-container ul a:active {
+  color: var(--White);
+  background-color: white;
+}
+
+.button-container {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.button-container a {
+  display: block;
+  color: var(--White);
+  background-color: var(--Orange);
+  padding: 1rem;
+  border-radius: 40px;
+}
+
+.button-container a:hover {
+  color: var(--Orange);
+  background-color: var(--White);
+}
+
+@media (min-width: 40em) {
+  .container {
+    flex-basis: 35%;
+  }
 }
