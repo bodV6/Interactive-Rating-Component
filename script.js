@@ -1,0 +1,1 @@
+const ratingPicker = document.get
