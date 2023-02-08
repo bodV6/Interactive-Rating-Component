@@ -46,7 +46,7 @@ I was able to:
 
 ### Links
 
-- Solution URL: [check here](hhttps://www.frontendmentor.io/solutions/interactive-rating-component-challenge-html-css-only-zxDtWRlP0J)
+- Solution URL: [check here](https://www.frontendmentor.io/solutions/interactive-rating-component-challenge-html-css-only-zxDtWRlP0J)
 - Live Site URL: [webpage](https://bodv6.github.io/Interactive-Rating-Component/#)
 
 ## My process
